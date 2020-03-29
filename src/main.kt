@@ -16,27 +16,7 @@ fun main() {
 
     val items: List<SimItem> = listOf(w1, w2, g, gate)
 
-    //TODO debug this shit
-    while (true) {
-        val a = readLine()
-        if (a == "1") {
-            w1.queueValue(true)
-        } else {
-            w1.queueValue(false)
-        }
 
-        val b = readLine()
-        if (a == "1") {
-            g.queueValue(true)
-        } else {
-            g.queueValue(false)
-        }
-
-
-        items.forEach { it.clock() }
-        items.forEach { it.resolveWires() }
-        println(w2.state)
-    }
 }
 
 class Main : PApplet() {
