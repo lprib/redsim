@@ -2,6 +2,8 @@ package model
 
 /** An item in the simulation which is clocked and/or propagates signals */
 interface SimItem {
+
+
     /**
      * Generally used in components to do logic and queue updates to surrounding wires.
      * This is called only once per clock cycle per SimItem.
